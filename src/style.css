@@ -63,6 +63,9 @@ form {
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
 .recipe strong {
   color: #1e3038;
   text-align: center;
@@ -73,4 +76,13 @@ footer {
   font-size: 13px;
   margin-top: 30px;
   color: #b3dee5;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
