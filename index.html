@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
@@ -12,8 +15,9 @@
 
 </header>
 <main>
-    <form action="">
-        <input type="text" placeholder="Enter an ingredient"
+    <form id="recipe-generator-form">
+        <input type="text" 
+        placeholder="Enter an ingredient"
         autofocus
         required 
         autocomplete="off"
@@ -21,11 +25,10 @@
         />
         <input type="submit" class="submit-button"/>
     </form>
-    <div class="recipe">
-        The recipe will go here...
-    </div>
+    <div class="recipe" id="recipe"></div>
 </main>
-    <footer>
+    
+<footer>
       This was coded by
       <a href="https://github.com/annegleichmann" target="_blank"
         >Anne Gleichmann</a
@@ -41,7 +44,7 @@
       <a href="https://shecodes-project-ai.netlify.app/" target="_blank"
         >hosted on Netlify</a
       >
-    </footer>
+  </footer>
 
     <script src="src/index.js"></script>
   </body>
