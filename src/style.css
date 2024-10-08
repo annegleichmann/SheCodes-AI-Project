@@ -63,6 +63,11 @@ form {
   border-radius: 10px;
 }
 
+.recipe strong {
+  color: #1e3038;
+  text-align: center;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
